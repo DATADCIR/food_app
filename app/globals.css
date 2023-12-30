@@ -1,11 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
-  font-family: vazir;
-  src: url(/public/fonts/vazir/Vazir-Bold-FD-WOL.eot);
+  font-family: "vazir";
+  src: url("/public/fonts/vazir/Vazir-Bold-FD-WOL.ttf");
 }
+
 * {
   direction: rtl;
-  font-family: vazir;
+  font-family: "vazir" !important;
 }

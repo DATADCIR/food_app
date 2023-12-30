@@ -3,7 +3,7 @@ export default function Home() {
     <main className="flex flex-col">
       <div className="px-8">
         <div className="flex items-center">
-          <div>
+          <div className="flex flex-col gap-3">
             <h1 className="text-2xl">
               انتخاب غذا های سالم و ساده در رستوران ما
             </h1>
@@ -15,7 +15,9 @@ export default function Home() {
               <button className="bg-red-500 text-white text-xs px-3 py-2 rounded-full">
                 مشاهده منو
               </button>
-              <button className="bg-green-500 px-2 py-1">تماس با ما</button>
+              <button className="bg-green-500 px-2 py-1 rounded-full">
+                تماس با ما
+              </button>
             </div>
           </div>
           <div></div>
