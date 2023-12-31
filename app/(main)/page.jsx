@@ -1,3 +1,4 @@
+import Icons from "@/components/shared/icons";
 import { FaBeer } from "react-icons/fa";
 export default function Home() {
   return (
@@ -16,7 +17,8 @@ export default function Home() {
               <button className="bg-red-500 text-white text-xs px-3 py-2 rounded-full">
                 مشاهده منو
               </button>
-              <button className="bg-slate-800 px-3 py-1 rounded-full text-white text-xs border border-red-500">
+              <button className="bg-slate-800 px-3 py-1 rounded-full text-red-500 text-xs border border-red-500 flex gap-1 items-center">
+                <Icons name="Call" />
                 تماس با ما
               </button>
             </div>

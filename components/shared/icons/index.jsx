@@ -4,6 +4,7 @@ import SearchIcon from "@/components/ui/icons/Search";
 import UserIcon from "@/components/ui/icons/User";
 import StoreIcon from "@/components/ui/icons/Store";
 import MenuIcon from "@/components/ui/icons/Menu";
+import CallIcon from "@/components/ui/icons/Call";
 const Icons = ({ name, classes }) => {
   let DynamicComponent;
 
@@ -25,6 +26,9 @@ const Icons = ({ name, classes }) => {
       break;
     case "Menu":
       DynamicComponent = MenuIcon;
+      break;
+    case "Call":
+      DynamicComponent = CallIcon;
       break;
     default:
       DynamicComponent = null;
