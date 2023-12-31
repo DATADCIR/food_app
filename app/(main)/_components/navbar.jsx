@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import Icons from "@/components/shared/icons";
 const Navbar = () => {
   return (
     <div className="w-full flex items-center justify-between  text-white px-8 py-2 ">
@@ -8,10 +9,18 @@ const Navbar = () => {
           <div className="nav_icon ml-8">آیکون</div>
           <div className="nav_items flex gap-5">
             <Link href={"/"}>صفحه اصلی</Link>
-            <Link href={"/"}>فروشگاه</Link>
-            <Link href={"/"}>تماس با ما</Link>
-            <Link href={"/"}>درباره ما</Link>
-            <Link href={"/"}>منو غذا</Link>
+            <Link href={"/"} className="flex gap-1 items-center">
+              فروشگاه <Icons name="Down" />
+            </Link>
+            <Link href={"/"} className="flex gap-1 items-center">
+              تماس با ما <Icons name="Down" />
+            </Link>
+            <Link href={"/"} className="flex gap-1 items-center">
+              درباره ما <Icons name="Down" />
+            </Link>
+            <Link href={"/"} className="flex gap-1 items-center">
+              منو غذا <Icons name="Down" />
+            </Link>
           </div>
         </div>
         <div className="flex">
