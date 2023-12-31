@@ -5,6 +5,8 @@ import UserIcon from "@/components/ui/icons/User";
 import StoreIcon from "@/components/ui/icons/Store";
 import MenuIcon from "@/components/ui/icons/Menu";
 import CallIcon from "@/components/ui/icons/Call";
+import MoonIcon from "@/components/ui/icons/Moon";
+import SunIcon from "@/components/ui/icons/Sun";
 const Icons = ({ name, classes }) => {
   let DynamicComponent;
 
@@ -29,6 +31,12 @@ const Icons = ({ name, classes }) => {
       break;
     case "Call":
       DynamicComponent = CallIcon;
+      break;
+    case "Moon":
+      DynamicComponent = MoonIcon;
+      break;
+    case "Sun":
+      DynamicComponent = SunIcon;
       break;
     default:
       DynamicComponent = null;

@@ -1,10 +1,16 @@
+"use client";
 import Link from "next/link";
-
 import Icons from "@/components/shared/icons";
+import { useTheme } from "next-themes";
 const Navbar = () => {
+  const { theme, setTheme } = useTheme();
   return (
-    <div className="w-full flex items-center justify-between  text-white px-8 py-2 ">
-      <div className="w-full flex items-center justify-between bg-slate-800 py-5 px-4 rounded-full">
+    <div className="w-full flex items-center justify-between px-8 py-2 ">
+      <div
+        className={`w-full flex items-center justify-between py-5 px-4 rounded-full ${
+          theme === "light" ? "bg-gray-50" : "bg-slate-800"
+        }`}
+      >
         <div className="flex items-center">
           <div className="nav_icon ml-8">آیکون</div>
           <div className="nav_items hidden lg:flex gap-5">
@@ -28,7 +34,7 @@ const Navbar = () => {
           <div className=" relative">
             <input
               type="text"
-              className="focus:outline-0 focus:border-0 rounded-full px-3 h-10 bg-slate-600 text-xs min-w-60"
+              className="focus:outline-0 focus:border-0 rounded-full px-3 h-10 bg-slate-200 dark:bg-slate-600 text-xs min-w-60"
               placeholder="نام غذا را وارد کنید... "
             />
             <Icons
@@ -51,6 +57,23 @@ const Navbar = () => {
               "bg-green-500 h-10 w-10 flex justify-center items-center rounded-full"
             }
           />
+          <div
+            onClick={() =>
+              theme === "light" ? setTheme("dark") : setTheme("light")
+            }
+          >
+            {theme === "light" ? (
+              <Icons
+                name="Sun"
+                classes="bg-gray-50 h-10 w-10 flex justify-center items-center rounded-full text-yellow-500"
+              />
+            ) : (
+              <Icons
+                name="Moon"
+                classes="bg-slate-900 h-10 w-10 flex justify-center items-center rounded-full text-yellow-500"
+              />
+            )}
+          </div>
         </div>
       </div>
     </div>
