@@ -1,6 +1,10 @@
 import DownIcon from "@/components/ui/icons/Down";
 import UpIcon from "@/components/ui/icons/Up";
-const Icons = ({ name }) => {
+import SearchIcon from "@/components/ui/icons/Search";
+import UserIcon from "@/components/ui/icons/User";
+import StoreIcon from "@/components/ui/icons/Store";
+import MenuIcon from "@/components/ui/icons/Menu";
+const Icons = ({ name, classes }) => {
   let DynamicComponent;
 
   switch (name) {
@@ -10,10 +14,26 @@ const Icons = ({ name }) => {
     case "Up":
       DynamicComponent = UpIcon;
       break;
+    case "Search":
+      DynamicComponent = SearchIcon;
+      break;
+    case "User":
+      DynamicComponent = UserIcon;
+      break;
+    case "Store":
+      DynamicComponent = StoreIcon;
+      break;
+    case "Menu":
+      DynamicComponent = MenuIcon;
+      break;
     default:
       DynamicComponent = null;
   }
 
-  return <DynamicComponent />;
+  return (
+    <div className={classes}>
+      <DynamicComponent />
+    </div>
+  );
 };
 export default Icons;
