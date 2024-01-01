@@ -2,8 +2,12 @@
 import Link from "next/link";
 import Icons from "@/components/shared/icons";
 import { useTheme } from "next-themes";
+import { useSelector, useDispatch } from "react-redux";
+import { openSidebar } from "@/app/GlobalRedux/Features/sidebar/sidebarSlice";
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
+  const isSidebarOpen = useSelector((state) => state.sidebar.value);
+  const dispatch = useDispatch();
   return (
     <div className="w-full flex items-center justify-between px-8 py-2 ">
       <div
@@ -28,13 +32,17 @@ const Navbar = () => {
               منو غذا <Icons name="Down" />
             </Link>
           </div>
-          <Icons name="Menu" classes="flex lg:hidden text-3xl" />
+          <Icons
+            handleClick={() => dispatch(openSidebar())}
+            name="Menu"
+            classes="flex lg:hidden text-3xl"
+          />
         </div>
         <div className="flex items-center gap-2">
-          <div className=" relative">
+          <div className=" relative hidden sm:flex">
             <input
               type="text"
-              className="focus:outline-0 focus:border-0 rounded-full px-3 h-10 bg-slate-200 dark:bg-slate-600 text-xs min-w-60"
+              className="focus:outline-0 focus:border-0 rounded-full px-3 h-10 bg-slate-200  text-xs min-w-60 "
               placeholder="نام غذا را وارد کنید... "
             />
             <Icons
@@ -65,7 +73,7 @@ const Navbar = () => {
             {theme === "light" ? (
               <Icons
                 name="Sun"
-                classes="bg-gray-50 h-10 w-10 flex justify-center items-center rounded-full text-yellow-500"
+                classes="bg-gray-100 h-10 w-10 flex justify-center items-center rounded-full text-yellow-500"
               />
             ) : (
               <Icons
