@@ -7,7 +7,8 @@ import MenuIcon from "@/components/ui/icons/Menu";
 import CallIcon from "@/components/ui/icons/Call";
 import MoonIcon from "@/components/ui/icons/Moon";
 import SunIcon from "@/components/ui/icons/Sun";
-const Icons = ({ name, classes }) => {
+import CloseIcon from "@/components/ui/icons/Close";
+const Icons = ({ name, classes, handleClick }) => {
   let DynamicComponent;
 
   switch (name) {
@@ -38,12 +39,15 @@ const Icons = ({ name, classes }) => {
     case "Sun":
       DynamicComponent = SunIcon;
       break;
+    case "Close":
+      DynamicComponent = CloseIcon;
+      break;
     default:
       DynamicComponent = null;
   }
 
   return (
-    <div className={classes}>
+    <div className={classes} onClick={handleClick}>
       <DynamicComponent />
     </div>
   );

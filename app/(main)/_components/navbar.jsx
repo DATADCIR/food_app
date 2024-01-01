@@ -2,8 +2,12 @@
 import Link from "next/link";
 import Icons from "@/components/shared/icons";
 import { useTheme } from "next-themes";
+import { useSelector, useDispatch } from "react-redux";
+import { openSidebar } from "@/app/GlobalRedux/Features/sidebar/sidebarSlice";
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
+  const isSidebarOpen = useSelector((state) => state.sidebar.value);
+  const dispatch = useDispatch();
   return (
     <div className="w-full flex items-center justify-between px-8 py-2 ">
       <div
@@ -28,7 +32,11 @@ const Navbar = () => {
               منو غذا <Icons name="Down" />
             </Link>
           </div>
-          <Icons name="Menu" classes="flex lg:hidden text-3xl" />
+          <Icons
+            handleClick={() => dispatch(openSidebar())}
+            name="Menu"
+            classes="flex lg:hidden text-3xl"
+          />
         </div>
         <div className="flex items-center gap-2">
           <div className=" relative hidden sm:flex">
