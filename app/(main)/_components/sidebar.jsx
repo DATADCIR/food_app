@@ -23,16 +23,16 @@ const Sidebar = () => {
             />
             <div className="nav_items flex flex-col gap-5">
               <Link href={"/"}>صفحه اصلی</Link>
-              <Link href={"/"} className="flex gap-1 items-center">
+              <Link href={"/store"} className="flex gap-1 items-center">
                 فروشگاه <Icons name="Down" />
               </Link>
-              <Link href={"/"} className="flex gap-1 items-center">
+              <Link href={"/contact-us"} className="flex gap-1 items-center">
                 تماس با ما <Icons name="Down" />
               </Link>
-              <Link href={"/"} className="flex gap-1 items-center">
+              <Link href={"/about-us"} className="flex gap-1 items-center">
                 درباره ما <Icons name="Down" />
               </Link>
-              <Link href={"/"} className="flex gap-1 items-center">
+              <Link href={"/food-menues"} className="flex gap-1 items-center">
                 منو غذا <Icons name="Down" />
               </Link>
             </div>
