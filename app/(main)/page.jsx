@@ -1,6 +1,5 @@
 "use client";
 import Icons from "@/components/shared/icons";
-import Sidebar from "./_components/sidebar";
 import { useTheme } from "next-themes";
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -32,9 +31,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div>
-            <Sidebar />
-          </div>
+          <div></div>
         </div>
       </div>
     </main>
