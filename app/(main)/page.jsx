@@ -1,5 +1,5 @@
 "use client";
-import Icons from "@/components/shared/icons";
+import Divider from "@/components/shared/dividers/divider";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 export default function Home() {
@@ -30,6 +30,9 @@ export default function Home() {
           </div>{" "}
           <div className="hidden md:flex absolute top-0 left-0 w-1/2 h-full -translate-x-16  header_clip_path bg-yellow-light z-0"></div>
         </div>
+      </div>
+      <div className="mt-16 px-8">
+        <Divider tag={"دسته بندی ها"} classes={"text-yellow-light"} />
       </div>
     </main>
   );

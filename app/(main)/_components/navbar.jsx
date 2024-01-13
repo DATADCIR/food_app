@@ -44,10 +44,10 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-2">
           <button className="border-2 border-yellow-light text-yellow-light rounded-full flex items-center justify-center  w-20 h-9">
-            ثبت نام
+            <Link href={"/register"}>ثبت نام</Link>
           </button>
           <button className="text-white bg-yellow-light rounded-full flex items-center justify-center  w-20 h-9">
-            ورود
+            <Link href={"/login"}>ورود</Link>
           </button>
           <div
             onClick={() =>
