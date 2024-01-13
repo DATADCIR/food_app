@@ -14,6 +14,15 @@ module.exports = {
         25: ".25",
         175: "1.75",
       },
+      colors: {
+        yellow: {
+          light: "#FDAB21",
+        },
+        body: "#484848",
+        gray: {
+          light: "#5C5C5C",
+        },
+      },
     },
   },
   plugins: [],

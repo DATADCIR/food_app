@@ -1,37 +1,34 @@
 "use client";
 import Icons from "@/components/shared/icons";
+import Image from "next/image";
 import { useTheme } from "next-themes";
 export default function Home() {
   const { theme, setTheme } = useTheme();
   return (
-    <main className="flex flex-col px-8">
-      <div
-        className={`px-8 py-2 rounded-3xl ${
-          theme === "light"
-            ? "bg-gray-50 text-black"
-            : "bg-slate-800 text-white"
-        }`}
-      >
-        <div className="flex items-center ">
-          <div className="flex flex-col gap-3">
-            <h1 className="text-2xl">
-              انتخاب غذا های سالم و ساده در رستوران ما
-            </h1>
-            <p>
-              برای تغییر این متن روی دکمه ویرایش کلیک کنید و لورم ایپسوم با متن
-              ساختگی با تولید سادگی نا مفهوم از صنعت چاپ طراحان گرافیک است
+    <main className="flex flex-col px-8 py-2">
+      <div className={`px-4 overflow-hideen`}>
+        <div className="header flex items-center relative">
+          <div className="flex flex-col gap-3 ">
+            <h1 className="text-yellow-light text-3xl">کافه رستوران ساندی</h1>
+            <p className="text-white">
+              تجربه بهترین لحظات در کنار دوستان و خانواده در کنار ما ، امیدواریم
+              لذت ببرید!؟
             </p>
-            <div className="flex gap-3">
-              <button className="bg-red-500 text-white text-xs px-3 py-2 rounded-full">
-                مشاهده منو
-              </button>
-              <button className="bg-slate-800 px-3 py-1 rounded-full text-red-500 text-xs border border-red-500 flex gap-1 items-center">
-                <Icons name="Call" />
-                تماس با ما
-              </button>
-            </div>
+            <input
+              className="outline-0  h-8 text-white text-xs px-4 bg-gray-light rounded-full border border-yellow-light"
+              placeholder="چی دوست داری؟"
+            />
           </div>
-          <div></div>
+          <div className="relative hidden md:flex justify-center items-end flex-1">
+            <Image
+              src="/images/restaurant-food_2.png"
+              width={500}
+              height={500}
+              alt="food"
+              className="z-10"
+            />
+          </div>{" "}
+          <div className="hidden md:flex absolute top-0 left-0 w-1/2 h-full -translate-x-16  header_clip_path bg-yellow-light z-0"></div>
         </div>
       </div>
     </main>

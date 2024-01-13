@@ -3,7 +3,7 @@ import Image from "next/image";
 const LoginPage = () => {
   return (
     <div className="w-full h-screen flex flex-col md:flex-row">
-      <div className="bg-yellow-400 hidden md:flex w-1/5 lg:w-2/6 relative group">
+      <div className="bg-yellow-light hidden md:flex w-1/5 lg:w-2/6 relative group">
         <div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 z-10">
           <Image
             src="/images/restaurant-food_2.png"
@@ -18,13 +18,13 @@ const LoginPage = () => {
           <p className="text-black text-4xl font-bold text-center">ثبت نام</p>
           <input
             placeholder="نام کاربری"
-            className="px-2 py-3 rounded-full bg-white bg-opacity-100 border-2 border-yellow-400 focus:border-yellow-400 outline-0 text-black opacity-100 z-10"
+            className="px-2 py-3 rounded-full bg-white bg-opacity-100 border-2 border-yellow-light focus:border-yellow-light outline-0 text-black opacity-100 z-10"
           />
           <input
             placeholder="رمز عبور"
-            className="px-2 py-3 rounded-full bg-white border-yellow-400 border-2 focus:border-yellow-400 outline-0 text-black"
+            className="px-2 py-3 rounded-full bg-white border-yellow-light border-2 focus:border-yellow-light outline-0 text-black"
           />
-          <button className="text-white bg-yellow-400  py-3 rounded-full opacity-100 border">
+          <button className="text-white bg-yellow-light  py-3 rounded-full opacity-100 border">
             ثبت نام
           </button>
         </div>
