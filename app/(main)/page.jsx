@@ -31,8 +31,13 @@ export default function Home() {
           <div className="hidden md:flex absolute top-0 left-0 w-1/2 h-full -translate-x-16  header_clip_path bg-yellow-light z-0"></div>
         </div>
       </div>
-      <div className="mt-16 px-8">
+      <div className="mt-16 px-8 flex flex-col">
         <Divider tag={"دسته بندی ها"} classes={"text-yellow-light"} />
+        <div className="flex flex-wrap">
+          <div>
+            <Image src="" alt="food category" />
+          </div>
+        </div>
       </div>
     </main>
   );
