@@ -10,26 +10,30 @@ const Navbar = () => {
   const dispatch = useDispatch();
   return (
     <div className="w-full flex items-center justify-between px-8 py-2 ">
-      <div
-        className={`w-full flex items-center justify-between py-5 px-4 rounded-full ${
-          theme === "light" ? "bg-gray-50" : "bg-slate-800"
-        }`}
-      >
+      <div className={`w-full flex items-center justify-between py-5 px-4 `}>
         <div className="flex items-center">
-          <div className="nav_icon ml-8">آیکون</div>
+          <div className="nav_icon ml-8 text-yellow-light text-xl">سان دی</div>
           <div className="nav_items hidden lg:flex gap-5">
-            <Link href={"/"}>صفحه اصلی</Link>
-            <Link href={"/store"} className="flex gap-1 items-center">
-              فروشگاه <Icons name="Down" />
+            <Link href={"/"} className="text-white">
+              صفحه اصلی
             </Link>
-            <Link href={"/contact-us"} className="flex gap-1 items-center">
-              تماس با ما <Icons name="Down" />
+            <Link
+              href={"/store"}
+              className="text-white flex gap-1 items-center"
+            >
+              فروشگاه
             </Link>
-            <Link href={"/about-us"} className="flex gap-1 items-center">
-              درباره ما <Icons name="Down" />
+            <Link
+              href={"/contact-us"}
+              className="text-white flex gap-1 items-center"
+            >
+              درباره ما
             </Link>
-            <Link href={"/food-menues"} className="flex gap-1 items-center">
-              منو غذا <Icons name="Down" />
+            <Link
+              href={"/about-us"}
+              className="text-white flex gap-1 items-center"
+            >
+              تماس با ما
             </Link>
           </div>
           <Icons
@@ -39,32 +43,12 @@ const Navbar = () => {
           />
         </div>
         <div className="flex items-center gap-2">
-          <div className=" relative hidden sm:flex">
-            <input
-              type="text"
-              className="focus:outline-0 focus:border-0 rounded-full px-3 h-10 bg-slate-200  text-xs min-w-60 "
-              placeholder="نام غذا را وارد کنید... "
-            />
-            <Icons
-              name="Search"
-              classes={
-                "bg-red-500 h-10 w-10 flex justify-center items-center rounded-full absolute top-0 left-0 h-full"
-              }
-            />
-          </div>
-
-          <Icons
-            name="Store"
-            classes={
-              "bg-yellow-500 h-10 w-10 flex justify-center items-center rounded-full"
-            }
-          />
-          <Icons
-            name="User"
-            classes={
-              "bg-green-500 h-10 w-10 flex justify-center items-center rounded-full"
-            }
-          />
+          <button className="border-2 border-yellow-light text-yellow-light rounded-full flex items-center justify-center  w-20 h-9">
+            ثبت نام
+          </button>
+          <button className="text-white bg-yellow-light rounded-full flex items-center justify-center  w-20 h-9">
+            ورود
+          </button>
           <div
             onClick={() =>
               theme === "light" ? setTheme("dark") : setTheme("light")
