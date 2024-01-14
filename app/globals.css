@@ -16,3 +16,6 @@
   direction: rtl;
   font-family: "vazir" !important;
 }
+.header_clip_path {
+  clip-path: circle(83.1% at 10% 100%);
+}
