@@ -14,6 +14,9 @@ module.exports = {
         25: ".25",
         175: "1.75",
       },
+      width: {
+        88: "340px",
+      },
       colors: {
         yellow: {
           light: "#FDAB21",
