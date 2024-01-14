@@ -85,6 +85,26 @@ export default function Home() {
           ))}
         </div>
       </div>
+      <div className="bg-gray-light mt-40 flex py-3 relative w-[115%] translate-x-11">
+        <div className="flex flex-col  p-8 w-1/3">
+          <h1 className="text-yellow-light text-2xl">نظر سنجی</h1>
+          <p className="text-lg text-justify">
+            جهت بهبود ارائه خدمات در نظر سنجي سايت شركت كنيد و به ميزان رضايت
+            خود به ما راي بدهيد باتشكر
+          </p>
+          <button className="text-white bg-yellow-light w-88 h-12 rounded-full">
+            شرکت در نظرسنجی
+          </button>
+        </div>
+
+        <Image
+          src={"/images/139180-food-plate-fish-download-hd 1.png"}
+          alt="fool"
+          width={400}
+          height={400}
+          className="absolute top-0 left-0 -translate-y-1/4 translate-x-36"
+        />
+      </div>
     </main>
   );
 }
