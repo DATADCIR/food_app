@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import NavLink from "./NavLink";
 import Icons from "@/components/shared/icons";
 import { useTheme } from "next-themes";
 import { useSelector, useDispatch } from "react-redux";
@@ -14,27 +15,25 @@ const Navbar = () => {
         <div className="flex items-center">
           <div className="nav_icon ml-8 text-yellow-light text-xl">سان دی</div>
           <div className="nav_items hidden lg:flex gap-5">
-            <Link href={"/"} className="text-white">
-              صفحه اصلی
-            </Link>
-            <Link
+            <NavLink href={"/"}>صفحه اصلی</NavLink>
+            <NavLink
               href={"/store"}
               className="text-white flex gap-1 items-center"
             >
               فروشگاه
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               href={"/contact-us"}
               className="text-white flex gap-1 items-center"
             >
               درباره ما
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               href={"/about-us"}
               className="text-white flex gap-1 items-center"
             >
               تماس با ما
-            </Link>
+            </NavLink>
           </div>
           <Icons
             handleClick={() => dispatch(openSidebar())}

@@ -21,7 +21,7 @@ const LoginPage = () => {
             className="px-2 py-3 rounded-full bg-white bg-opacity-100 border-2 border-yellow-light focus:border-yellow-light outline-0 text-black opacity-100 z-10"
           />
           <input
-            placeholder="رمز عبور"
+            placeholder="شماره تلفن"
             className="px-2 py-3 rounded-full bg-white border-yellow-light border-2 focus:border-yellow-light outline-0 text-black"
           />
           <button className="text-white bg-yellow-light  py-3 rounded-full opacity-100 border">
