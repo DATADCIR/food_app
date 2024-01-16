@@ -70,7 +70,7 @@ const Footer = () => {
           src="/images/delicious-food-restaurant-food-png 1.png"
           width={500}
           height={500}
-          className="absolute bottom-0 right-0 translate-x-16 translate-y-16 brightness-50"
+          className="absolute bottom-0 right-0 translate-x-16 translate-y-16"
         />
       </div>
     </div>

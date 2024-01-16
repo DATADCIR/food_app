@@ -3,7 +3,7 @@ import Sidebar from "./_components/sidebar";
 import Footer from "./_components/footer";
 const mainPageLayout = ({ children }) => {
   return (
-    <div className="flex flex-col bg-body overflow-x-hidden -z-50">
+    <div className="flex flex-col bg-body overflow-x-hidden px-8 -z-50">
       <Sidebar />
       <Navbar />
       {children}

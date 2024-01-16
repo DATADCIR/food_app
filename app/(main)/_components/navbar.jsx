@@ -10,7 +10,7 @@ const Navbar = () => {
   const isSidebarOpen = useSelector((state) => state.sidebar.value);
   const dispatch = useDispatch();
   return (
-    <div className="w-full flex items-center justify-between px-8 py-2 ">
+    <div className="w-full flex items-center justify-between py-2 ">
       <div className={`w-full flex items-center justify-between py-5 px-4 `}>
         <div className="flex items-center">
           <div className="nav_icon ml-8 text-yellow-light text-xl">سان دی</div>
