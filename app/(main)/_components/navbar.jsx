@@ -23,13 +23,13 @@ const Navbar = () => {
               فروشگاه
             </NavLink>
             <NavLink
-              href={"/contact-us"}
+              href={"/about-us"}
               className="text-white flex gap-1 items-center"
             >
               درباره ما
             </NavLink>
             <NavLink
-              href={"/about-us"}
+              href={"/contact-us"}
               className="text-white flex gap-1 items-center"
             >
               تماس با ما
