@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PageInspector from "../_components/PageInspector";
+import Survey from "../_components/survey";
 const ContactUsPage = () => {
   return (
     <>
@@ -33,6 +34,7 @@ const ContactUsPage = () => {
         title={"سان دي >> تماس با ما"}
         classes="text-yellow-light text-lg h-24 border-2 border-yellow-light my-10"
       />
+      <Survey />
     </>
   );
 };
