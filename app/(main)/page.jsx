@@ -6,9 +6,10 @@ import { categories } from "@/data";
 import Rating from "./_components/Rating";
 import Icons from "@/components/shared/icons";
 import Survey from "./_components/survey";
+import CategoryItem from "./_components/CategoryItem";
 export default function Home() {
   return (
-    <main className="flex flex-col px-8 py-2">
+    <main className="flex flex-col py-2">
       <div className={`px-4 overflow-hideen`}>
         <div className="header flex items-center relative">
           <div className="flex flex-col gap-3 w-full md:w-1/3">
@@ -38,18 +39,8 @@ export default function Home() {
         <Divider tag={"دسته بندی ها"} classes={"text-yellow-light"} />
         <div className="flex flex-wrap justify-center gap-3">
           {categories.map((category) => (
-            <div
-              key={category.key}
-              className={`w-48 h-52 flex justify-center items-center     text-yellow-light relative overflow-hidden`}
-            >
-              <span className="z-10">{category.key}</span>
-              <Image
-                src={category.image}
-                width={"192"}
-                height={"208"}
-                alt="food app"
-                className="absolute w-full h-full top-0 left-0   brightness-25"
-              />
+            <div key={category.key}>
+              <CategoryItem image={category.image}>{category.key}</CategoryItem>
             </div>
           ))}
         </div>

@@ -8,6 +8,9 @@ import CallIcon from "@/components/ui/icons/Call";
 import MoonIcon from "@/components/ui/icons/Moon";
 import SunIcon from "@/components/ui/icons/Sun";
 import CloseIcon from "@/components/ui/icons/Close";
+import ChevronLeftIcon from "@/components/ui/icons/ChevronLeft";
+import ChevronRightIcon from "@/components/ui/icons/ChevronRight";
+
 const Icons = ({ name, classes, handleClick }) => {
   let DynamicComponent;
 
@@ -42,14 +45,22 @@ const Icons = ({ name, classes, handleClick }) => {
     case "Close":
       DynamicComponent = CloseIcon;
       break;
+    case "ChevronLeft":
+      DynamicComponent = ChevronLeftIcon;
+      break;
+    case "ChevronRight":
+      DynamicComponent = ChevronRightIcon;
+      break;
     default:
-      DynamicComponent = null;
+      // Handle unknown icon name, set a default icon, or throw an error based on your needs.
+      DynamicComponent = CloseIcon; // Assuming UnknownIcon is another component for handling unknown icons.
   }
 
   return (
     <div className={classes} onClick={handleClick}>
-      <DynamicComponent />
+      {DynamicComponent && <DynamicComponent />}
     </div>
   );
 };
+
 export default Icons;
