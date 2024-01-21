@@ -35,7 +35,7 @@ const ContactUsPage = () => {
         classes="text-yellow-light text-lg h-24 border-2 border-yellow-light my-10"
       />
       <div className="flex flex-col md:flex-row items-center gap-5 bg-gray-light rounded-lg p-5 md:p-10 mb-10">
-        <div className="md:w-3/5 flex flex-col gap-5">
+        <div className="md:w-3/5 flex flex-col gap-5 p-10 sm:p-20">
           <h1 className="text-yellow-light text-xl">فرم ارسال نظر</h1>
           <p className="text-white text-lg">
             شما میتوانید از این قسمت نظر انتقادات و هر مسئله ای را که صلاح
@@ -102,7 +102,7 @@ const ContactUsPage = () => {
             </div>
           </div>
         </div>
-        <div className="md:w-1/2 lg:w-3/5 flex flex-col gap-5 justify-center text-lg text-white p-5 sm:p-0 text-justify">
+        <div className="md:w-1/2 lg:w-3/5 flex flex-col gap-5 justify-center text-lg text-white  p-10 sm:p-20 text-justify">
           <p>
             علاوه بر ارسال نظرات شما میتوانید ما را در شبکه های اجتماعی دنبال
             کنید و با ما در ارتباط باشید.
