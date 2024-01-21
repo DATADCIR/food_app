@@ -26,6 +26,9 @@ module.exports = {
           light: "#5C5C5C",
         },
       },
+      outlineWidth: {
+        20: "20px",
+      },
     },
   },
   plugins: [],
