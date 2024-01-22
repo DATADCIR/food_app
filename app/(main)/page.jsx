@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <main className="flex flex-col py-2">
       <div className={`px-4 overflow-hideen`}>
-        <div className="header flex items-center relative">
-          <div className="flex flex-col gap-3 w-full md:w-1/3">
+        <div className="header flex flex-col md:flex-row items-center relative gap-y-20">
+          <div className="flex flex-col gap-6 sm:gap-3 w-full md:w-1/3">
             <h1 className="text-yellow-light text-3xl">کافه رستوران ساندی</h1>
             <p className="text-white text-lg">
               تجربه بهترین لحظات در کنار دوستان و خانواده در کنار ما ، امیدواریم
@@ -23,7 +23,7 @@ export default function Home() {
               placeholder="چی دوست داری؟"
             />
           </div>
-          <div className="relative hidden md:flex justify-center items-end w-2/3">
+          <div className="relative flex justify-center items-end md:w-2/3">
             <Image
               src="/images/restaurant-food_2.png"
               width={500}
@@ -32,7 +32,7 @@ export default function Home() {
               className="z-10"
             />
           </div>{" "}
-          <div className="hidden md:flex absolute top-0 left-0 w-1/2 h-full -translate-x-16  header_clip_path bg-yellow-light z-0"></div>
+          <div className="flex absolute top-0 left-0 w-full md:w-1/2 h-full -translate-x-16  header_clip_path bg-yellow-light z-0"></div>
         </div>
       </div>
       <div className="mt-16 px-8 flex flex-col gap-16">
@@ -58,7 +58,7 @@ export default function Home() {
                 width={100}
                 height={100}
                 alt="food takhfif"
-                className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2"
+                className="absolute top-0 right-0 translate-x-10 sm:translate-x-1/2 -translate-y-1/2"
               />
               <p className="text-yellow-light text-xl">پاستا ساده</p>
               <Rating />
