@@ -1,9 +1,9 @@
 const Divider = ({ tag, classes }) => {
   return (
-    <div className={`flex gap-5 items-center ${classes}`}>
+    <div className={`flex gap-3 sm:gap-5 items-center ${classes}`}>
       {tag ? (
-        <div className="flex gap-4 items-center">
-          <span className="text-nowrap">{tag}</span>
+        <div className="flex gap-2 sm:gap-4 items-center">
+          <span className="text-nowrap whitespace-nowrap">{tag}</span>
           <div className="h-2 w-6 rounded-lg bg-yellow-light"></div>
           <div className="h-2 w-6 rounded-lg bg-yellow-light"></div>
           <div className="h-2 w-6 rounded-lg bg-yellow-light"></div>

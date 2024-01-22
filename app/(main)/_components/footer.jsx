@@ -24,8 +24,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="w-full h-20 bg-gray-light flex items-center justify-center text-2xl bg-opacity-85 rounded-t-lg">
-            <p className="text-yellow-light">
+          <div className="w-full h-20 bg-gray-light flex items-center justify-center  bg-opacity-85 rounded-t-lg px-2">
+            <p className="text-yellow-light text-center text-xl sm:text-2xl">
               تمامي منابع محفوظ به سان دي ميباشد
             </p>
           </div>
@@ -38,7 +38,7 @@ const Footer = () => {
             height={328}
             className="w-full"
           />
-          <div className="flex items-center justify-center gap-5">
+          <div className="flex flex-wrap items-center justify-center gap-5">
             <Image
               alt="instagram"
               src="/images/Vector.png"

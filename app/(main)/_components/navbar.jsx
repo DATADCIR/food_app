@@ -13,7 +13,9 @@ const Navbar = () => {
     <div className="w-full flex items-center justify-between py-2 ">
       <div className={`w-full flex items-center justify-between py-5 px-4 `}>
         <div className="flex items-center">
-          <div className="nav_icon ml-8 text-yellow-light text-xl">سان دی</div>
+          <div className="nav_icon hidden sm:flex ml-8 text-yellow-light text-xl whitespace-nowrap">
+            سان دی
+          </div>
           <div className="nav_items hidden lg:flex gap-5">
             <NavLink href={"/"}>صفحه اصلی</NavLink>
             <NavLink
@@ -42,13 +44,14 @@ const Navbar = () => {
           />
         </div>
         <div className="flex items-center gap-2">
-          <button className="border-2 border-yellow-light text-yellow-light rounded-full flex items-center justify-center  w-20 h-9">
+          <button className="border-2 border-yellow-light text-yellow-light text-xs sm:text-base rounded-full flex items-center justify-center w-16 h-8 sm:w-20 sm:h-9">
             <Link href={"/register"}>ثبت نام</Link>
           </button>
-          <button className="text-white bg-yellow-light rounded-full flex items-center justify-center  w-20 h-9">
+          <button className="text-white bg-yellow-light text-xs sm:text-base rounded-full flex items-center justify-center w-16 h-8 sm:w-20 sm:h-9">
             <Link href={"/login"}>ورود</Link>
           </button>
           <div
+            className="hidden sm:flex"
             onClick={() =>
               theme === "light" ? setTheme("dark") : setTheme("light")
             }

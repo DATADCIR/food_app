@@ -5,7 +5,7 @@ const AboutUsPage = () => {
   return (
     <>
       {" "}
-      <div className="w-full flex flex-col md:flex-row bg-gray-light pt-12">
+      <div className="w-full flex flex-col md:flex-row bg-gray-light pt-12 gap-y-10">
         <div className="flex flex-col justify-center  md:w-1/3 px-6 gap-5">
           <h1 className="text-2xl text-yellow-light">رستوران سان دي</h1>
           <p className="text-white text-xl flex flex-col gap-3">
@@ -26,7 +26,7 @@ const AboutUsPage = () => {
             width={303}
             height={296}
             alt="food"
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+            className="scale-75 sm:scale-100 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 "
           />
         </div>
       </div>
@@ -34,7 +34,7 @@ const AboutUsPage = () => {
         title={"سان دي >> درباره ما"}
         classes="text-yellow-light text-lg h-24 border-2 border-yellow-light my-10"
       />
-      <Divider tag={"گالری تصاویر"} classes="mb-10" />
+      <Divider tag={"گالری تصاویر"} classes="mb-10 text-yellow-light" />
       <div className="flex flex-col lg:flex-row justify-center items-center p-10 gap-5 bg-gray-light rounded-lg">
         <div className="w-full lg:w-3/5 flex flex-col  gap-5">
           <div className="flex  gap-3">

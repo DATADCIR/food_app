@@ -26,7 +26,7 @@ const ContactUsPage = () => {
             width={303}
             height={296}
             alt="food"
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+            className="scale-75 sm:scale-100  absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
           />
         </div>
       </div>
