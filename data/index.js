@@ -113,3 +113,9 @@ export const foodItems = [
     },
   },
 ];
+
+export const galleryImages = [
+  "/images/139180-food-plate-fish-download-hd 3.png",
+  "/images/restaurant-food_2.png",
+  "/images/139180-food-plate-fish-download-hd 3.png",
+];

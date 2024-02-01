@@ -47,7 +47,7 @@ const Footer = () => {
             />
             <Image
               alt="instagram"
-              src="/images/skill-icons_instagram.png"
+              src="/images/logos_telegram.png"
               width={80}
               height={80}
             />
