@@ -11,6 +11,7 @@ module.exports = {
         "food-image": "url('/public/images/CafeReconcile.png')",
       },
       brightness: {
+        5: ".1",
         25: ".25",
         175: "1.75",
       },
@@ -28,6 +29,10 @@ module.exports = {
       },
       outlineWidth: {
         20: "20px",
+      },
+      scale: {
+        175: "1.75",
+        200: "2",
       },
     },
   },

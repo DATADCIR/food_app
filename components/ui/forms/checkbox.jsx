@@ -6,7 +6,7 @@ const Checkbox = ({ item, classes }) => {
         id="checked-checkbox"
         type="checkbox"
         value=""
-        className="w-7 h-7 text-yellow-light bg-yellow-light border-yellow-light rounded focus:yellow-light "
+        className="w-7 h-7 text-yellow-light bg-yellow-light border-yellow-light rounded focus:bg-yellow-light "
       />
       <label htmlFor="checked-checkbox">{label}</label>
     </div>
