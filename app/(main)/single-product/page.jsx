@@ -3,13 +3,14 @@ import { galleryImages } from "@/data";
 import PageInspector from "../_components/PageInspector";
 import Gallery from "./_components/gallery";
 import Image from "next/image";
+import Comment from "./_components/comment";
 const SingleProductPage = () => {
   return (
     <>
       <PageInspector
         title="ساندی < محصولات > ماهی آبپز شده"
         classes={
-          "text-yellow-light text-base sm:text-lg h-24 border-2 border-yellow-light my-10"
+          "text-yellow-light text-base sm:text-lg h-24 rounded-xl border-2 border-yellow-light my-10 "
         }
       />
       <div className="flex flex-col lg:flex-row bg-gray-light p-6 rounded-lg gap-4">
@@ -40,14 +41,14 @@ const SingleProductPage = () => {
         </div>
       </div>
 
-      <div className="flex gap-5 p-10 bg-gray-light rounded-lg my-10">
-        <div className="relative w-2/3 flex flex-col gap-10 px-5 py-8">
+      <div className="flex flex-col md:flex-row gap-5 p-10 bg-gray-light rounded-lg my-10">
+        <div className="relative md:w-2/3 flex flex-col gap-10 px-5 py-8">
           <Image
             src="/images/Rectangle 95.png"
             width={770}
             height={683}
             alt="food image"
-            className="absolute top-0 left-0 w-full h-full brightness-25 z-0"
+            className="absolute top-0 left-0 w-full h-full brightness-5 z-0"
           />
           <Divider
             tag={"مواد لازم"}
@@ -81,14 +82,14 @@ const SingleProductPage = () => {
             بیشتر
           </button>
         </div>
-        <div className=" w-1/3 flex flex-col gap-10">
+        <div className=" md:w-1/3 flex flex-col gap-10">
           <div className="relative flex flex-col gap-8 py-8 px-5 rounded-lg overflow-hidden">
             <Image
               src="/images/Rectangle 95.png"
               width={369}
               height={295}
               alt="food image"
-              className="absolute top-0 left-0 w-full h-full brightness-25 z-0"
+              className="absolute top-0 left-0 w-full h-full brightness-5 z-0"
             />
             <Divider
               tag="انرژی"
@@ -115,7 +116,7 @@ const SingleProductPage = () => {
               width={396}
               height={355}
               alt="food image"
-              className="absolute top-0 left-0 w-full h-full brightness-25 z-0"
+              className="absolute top-0 left-0 w-full h-full brightness-5 z-0"
             />
             <Divider
               tag="تگ ها"
@@ -143,6 +144,30 @@ const SingleProductPage = () => {
             </div>
             <button className="rounded-full text-white bg-yellow-light py-2.5 px-5 z-10 w-32 h-14 mx-auto">
               بیشتر
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col bg-gray-light rounded-lg">
+        <div className="p-5">
+          <textarea
+            placeholder="نظر شما..."
+            type={"textarea"}
+            className="w-full h-60 rounded-lg px-4 py-5 bg-body border-yellow-light border-2 focus:border-yellow-light outline-0 text-white"
+          ></textarea>
+        </div>
+        <div className="flex flex-col-reverse md:flex-row w-full gap-5">
+          <div className="md:w-4/5 flex flex-col gap-20 bg-body py-14 pl-5">
+            <Comment />
+            <Comment />
+            <Comment />
+            <Comment />
+            <Comment />
+            <Comment />
+          </div>
+          <div className="md:w-1/5">
+            <button className="rounded-lg text-white bg-yellow-light  z-10  w-56 h-16 mx-auto mr-5 md:mr-0">
+              ارسال نظر
             </button>
           </div>
         </div>

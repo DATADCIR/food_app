@@ -6,7 +6,7 @@ const FoodItem = ({ classes, item }) => {
     <div className={`relative flex flex-col gap-5 ${classes}`}>
       <div className="flex flex-col md:flex-row gap-5">
         <div className="text-white text-2xl">{name}</div>
-        <div className="flex gap-3">
+        <div className="flex gap-3 bg-gradient-to-l from-white to-transparent rounded-r-full">
           <Rating />
           <span className="text-green-500">{disCountedPrice}</span>
           <span className="text-red-500 line-through">{originalPrice}</span>
