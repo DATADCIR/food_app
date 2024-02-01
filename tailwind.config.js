@@ -11,6 +11,7 @@ module.exports = {
         "food-image": "url('/public/images/CafeReconcile.png')",
       },
       brightness: {
+        5: ".5",
         25: ".25",
         175: "1.75",
       },
