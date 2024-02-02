@@ -8,7 +8,7 @@ const comment = () => {
           alt="user image"
           width={182}
           height={182}
-          className="absolute top-0 right-0 -translate-y-1/5 translate-x-1/4 scale-200 md:scale-175"
+          className="absolute top-0 right-0   translate-x-1/3 -translate-y-1/2 xl:translate-y-3 xl:translate-x-1/4 scale-200 xl:scale-175"
         />
       </div>
       <div className="w-11/12 flex flex-col gap-5 ">

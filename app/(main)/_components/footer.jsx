@@ -3,7 +3,7 @@ import Divider from "@/components/shared/dividers/divider";
 const Footer = () => {
   return (
     <div>
-      <Divider classes={"mt-36 px-8"} />
+      <Divider classes={"mt-20 sm:mt-36 mx-auto w-[200%] translate-x-10"} />
       <div className="relative footer mt-24 flex flex-col lg:flex-row  gap-5 mb-16 px-8">
         <div className="flex flex-col w-full lg:w-1/2 gap-7">
           <div className="flex flex-col md:flex-row gap-5">

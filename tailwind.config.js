@@ -26,6 +26,9 @@ module.exports = {
         gray: {
           light: "#5C5C5C",
         },
+        green: {
+          light: "#0FA958",
+        },
       },
       outlineWidth: {
         20: "20px",
