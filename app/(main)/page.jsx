@@ -14,7 +14,7 @@ export default function Home() {
         <div className="header flex flex-col md:flex-row items-center relative gap-y-20">
           <div className="flex flex-col gap-6 sm:gap-3 w-full md:w-1/3">
             <h1 className="text-yellow-light text-3xl">کافه رستوران ساندی</h1>
-            <p className="text-white text-lg">
+            <p className="text-white dark:text-yellow-400 text-lg">
               تجربه بهترین لحظات در کنار دوستان و خانواده در کنار ما ، امیدواریم
               لذت ببرید!؟
             </p>
