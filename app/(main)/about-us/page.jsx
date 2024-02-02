@@ -32,7 +32,7 @@ const AboutUsPage = () => {
       </div>
       <PageInspector
         title={"سان دي >> درباره ما"}
-        classes="text-yellow-light text-lg h-24 border-2 border-yellow-light my-10"
+        classes="text-yellow-light text-lg h-24 border-2 border-yellow-light my-10 rounded-xl"
       />
       <Divider tag={"گالری تصاویر"} classes="mb-10 text-yellow-light" />
       <div className="flex flex-col lg:flex-row justify-center items-center p-10 gap-5 bg-gray-light rounded-lg">

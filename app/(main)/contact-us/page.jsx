@@ -32,7 +32,7 @@ const ContactUsPage = () => {
       </div>
       <PageInspector
         title={"سان دي >> تماس با ما"}
-        classes="text-yellow-light text-lg h-24 border-2 border-yellow-light my-10"
+        classes="text-yellow-light text-lg h-24 border-2 border-yellow-light my-10 rounded-xl"
       />
       <div className="flex flex-col md:flex-row items-center gap-5 bg-gray-light rounded-lg p-5 md:p-10 mb-10">
         <div className="md:w-3/5 flex flex-col gap-5 p-10 sm:p-20">
