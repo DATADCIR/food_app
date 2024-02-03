@@ -1,6 +1,7 @@
 import Image from "next/image";
 import PageInspector from "../_components/PageInspector";
 import Survey from "../_components/survey";
+import Input from "@/components/ui/forms/input";
 const ContactUsPage = () => {
   return (
     <>
@@ -48,15 +49,21 @@ const ContactUsPage = () => {
           </p>
         </div>
         <div className="w-full md:w-2/5 flex flex-col gap-5">
-          <input
+          <Input
+            type={"email"}
             placeholder="ایمیل"
-            className="w-full px-4 py-3 rounded-full bg-white border-yellow-light border-2 focus:border-yellow-light outline-0 text-black"
-          />{" "}
-          <input
-            placeholder="ایمیل"
-            type={"textarea"}
-            className="w-full px-4 py-32 rounded-3xl bg-white border-yellow-light border-2 focus:border-yellow-light outline-0 text-black"
-          />{" "}
+            classes={
+              "w-full px-4 py-3 rounded-full bg-white border-yellow-light border-2 focus:border-yellow-light outline-0 text-black"
+            }
+          />
+          <Input
+            type={"email"}
+            placeholder="text"
+            classes={
+              "w-full px-4 py-32 rounded-3xl bg-white border-yellow-light border-2 focus:border-yellow-light outline-0 text-black"
+            }
+          />
+
           <button className="text-white  bg-yellow-light  py-5 rounded-full opacity-100 border text-xl">
             تایید
           </button>

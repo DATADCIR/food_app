@@ -16,9 +16,12 @@ const Varification = () => {
       <div className="w-full h-screen md:w-2/3 flex justify-center items-center relative">
         <div className="w-2/3 lg:w-1/2 h-2/3 bg-white  rounded-2xl flex flex-col gap-5  px-8 lg:px-20 py-20 bg-opacity-65 ">
           <p className="text-black text-4xl font-bold text-center">تایید کد</p>
-          <input
+          <Input
+            type={"text"}
             placeholder="کد ارسال شده"
-            className="px-2 py-3 rounded-full bg-white bg-opacity-100 border-2 border-yellow-light focus:border-yellow-light outline-0 text-black opacity-100 z-10"
+            classes={
+              "px-2 py-3 rounded-full bg-white bg-opacity-100 border-2 border-yellow-light focus:border-yellow-light outline-0 text-black opacity-100 z-10"
+            }
           />
           <button className="text-white  bg-yellow-light  py-3 rounded-full opacity-100 border">
             تایید
