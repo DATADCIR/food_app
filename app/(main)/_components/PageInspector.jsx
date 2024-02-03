@@ -1,7 +1,7 @@
 import Image from "next/image";
 const PageInspector = ({ title, classes }) => {
   return (
-    <div className={`relative  ${classes}`}>
+    <div className={`relative overflow-hidden  ${classes}`}>
       <div className="absolute top-0 left-0 w-full h-full z-10  flex items-center">
         <span className="mr-8 ">{title}</span>
       </div>
