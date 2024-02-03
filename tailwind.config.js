@@ -26,6 +26,9 @@ module.exports = {
         gray: {
           light: "#5C5C5C",
         },
+        green: {
+          light: "#0FA958",
+        },
       },
       outlineWidth: {
         20: "20px",
@@ -33,6 +36,8 @@ module.exports = {
       scale: {
         175: "1.75",
         200: "2",
+        300: "3",
+        400: "4",
       },
     },
   },

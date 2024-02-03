@@ -37,7 +37,7 @@ const StorePage = () => {
       </div>
       <PageInspector
         title={"ساندی << محصولات"}
-        classes="text-yellow-light text-lg h-24 border-2 border-yellow-light my-10"
+        classes="text-yellow-light text-lg h-24 border-2 border-yellow-light my-10 rounded-xl"
       />
       <div className="flex flex-col lg:flex-row gap-5">
         <div className="lg:w-1/3 flex flex-col gap-5">
