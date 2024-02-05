@@ -25,6 +25,8 @@ module.exports = {
         body: "#484848",
         gray: {
           light: "#5C5C5C",
+          100: "#D9D9D9",
+          50: "#F0F0F0",
         },
         green: {
           light: "#0FA958",
