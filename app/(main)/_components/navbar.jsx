@@ -5,9 +5,11 @@ import Icons from "@/components/shared/icons";
 import { useTheme } from "next-themes";
 import { useSelector, useDispatch } from "react-redux";
 import { openSidebar } from "@/app/GlobalRedux/Features/sidebar/sidebarSlice";
+import { login } from "@/app/GlobalRedux/Features/login/loginSlice";
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
   const isSidebarOpen = useSelector((state) => state.sidebar.value);
+  const isUserLogin = useSelector(login);
   const dispatch = useDispatch();
   return (
     <div className="w-full flex items-center justify-between py-2 ">
@@ -44,12 +46,21 @@ const Navbar = () => {
           />
         </div>
         <div className="flex items-center gap-2">
-          <button className="border-2 border-yellow-light text-yellow-light text-xs sm:text-base rounded-full flex items-center justify-center w-16 h-8 sm:w-20 sm:h-9">
-            <Link href={"/register"}>ثبت نام</Link>
-          </button>
-          <button className="text-white bg-yellow-light text-xs sm:text-base rounded-full flex items-center justify-center w-16 h-8 sm:w-20 sm:h-9">
-            <Link href={"/login"}>ورود</Link>
-          </button>
+          {isUserLogin ? (
+            <button className="text-white bg-yellow-light text-xs sm:text-base rounded-full flex items-center justify-center w-16 h-8 sm:w-28 sm:h-9">
+              <Link href={"/user-dashboard/informations"}>پنل کاربری</Link>
+            </button>
+          ) : (
+            <div className="flex ga-4">
+              <button className="border-2 border-yellow-light text-yellow-light text-xs sm:text-base rounded-full flex items-center justify-center w-28 h-10 sm:w-32 sm:h-10">
+                <Link href={"/register"}>ثبت نام</Link>
+              </button>
+              <button className="text-white bg-yellow-light text-xs sm:text-base rounded-full flex items-center justify-center w-16 h-8 sm:w-20 sm:h-9">
+                <Link href={"/login"}>ورود</Link>
+              </button>
+            </div>
+          )}
+
           <div
             className="hidden sm:flex"
             onClick={() =>

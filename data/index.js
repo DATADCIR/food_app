@@ -1,3 +1,5 @@
+import Factor from "@/factor/factor";
+
 export const categories = [
   { key: "فستفود", image: "/images/intro-1682446897 1.png" },
   { key: "پروتئینی", image: "/images/roast-beef-recipes-536cd86 1.png" },
@@ -119,3 +121,127 @@ export const galleryImages = [
   "/images/restaurant-food_2.png",
   "/images/139180-food-plate-fish-download-hd 3.png",
 ];
+
+export const orderTable = {
+  lablees: [
+    { key: "Factor", label: "فاکتور" },
+    { key: "produceDate", label: "تاریخ ایجاد" },
+    { key: "qty", label: "تعداد اقلام" },
+    { key: "payments", label: "پرداخت" },
+    { key: "operation", label: "عملیات" },
+  ],
+  data: [
+    {
+      Factor: "1023",
+      produceDate: "1402/07/07",
+      qty: "12",
+      payments: "شده",
+      operation: "عملیات",
+    },
+    {
+      Factor: "1024",
+      produceDate: "1401/02/05",
+      qty: "213",
+      payments: "شده",
+      operation: "عملیات",
+    },
+    {
+      Factor: "1025",
+      produceDate: "1400/05/02",
+      qty: "2353",
+      payments: "شده",
+      operation: "عملیات",
+    },
+    {
+      Factor: "1026",
+      produceDate: "1399/04/05",
+      qty: "23",
+      payments: "شده",
+      operation: "عملیات",
+    },
+    {
+      Factor: "1028",
+      produceDate: "1378/02/04",
+      qty: "25",
+      payments: "شده",
+      operation: "عملیات",
+    },
+    {
+      Factor: "1029",
+      produceDate: "1402/07/07",
+      qty: "12",
+      payments: "شده",
+      operation: "عملیات",
+    },
+    {
+      Factor: "1030",
+      produceDate: "1401/02/05",
+      qty: "213",
+      payments: "شده",
+      operation: "عملیات",
+    },
+    {
+      Factor: "1031",
+      produceDate: "1400/05/02",
+      qty: "2353",
+      payments: "شده",
+      operation: "عملیات",
+    },
+    {
+      Factor: "1032",
+      produceDate: "1399/04/05",
+      qty: "23",
+      payments: "شده",
+      operation: "عملیات",
+    },
+    {
+      Factor: "1033",
+      produceDate: "1378/02/04",
+      qty: "25",
+      payments: "شده",
+      operation: "عملیات",
+    },
+    {
+      Factor: "1034",
+      produceDate: "1402/07/07",
+      qty: "12",
+      payments: "شده",
+      operation: "عملیات",
+    },
+    {
+      Factor: "1035",
+      produceDate: "1401/02/05",
+      qty: "213",
+      payments: "شده",
+      operation: "عملیات",
+    },
+    {
+      Factor: "1035",
+      produceDate: "1400/05/02",
+      qty: "2353",
+      payments: "شده",
+      operation: "عملیات",
+    },
+    {
+      Factor: "1036",
+      produceDate: "1399/04/05",
+      qty: "23",
+      payments: "شده",
+      operation: "عملیات",
+    },
+    {
+      Factor: "1037",
+      produceDate: "1378/02/04",
+      qty: "25",
+      payments: "شده",
+      operation: "عملیات",
+    },
+    {
+      Factor: "1038",
+      produceDate: "1378/02/04",
+      qty: "25",
+      payments: "شده",
+      operation: "عملیات",
+    },
+  ],
+};
