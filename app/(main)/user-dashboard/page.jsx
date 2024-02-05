@@ -37,7 +37,7 @@ const UserDashboardPage = () => {
         </div>
       </div>{" "}
       <div className="flex flex-col md:flex-row gap-10">
-        <div className="md:w-2/3 h-16 rounded-xl text-white flex justify-center items-center bg-green-light px-2 py-1 sm:py-0 ">
+        <div className="md:w-2/3 h-16 rounded-xl text-white flex justify-center items-center bg-green-light px-2 py-1 md:py-0 ">
           <p className="text-center">
             جهت ارائه خدمات و تسریع در عملیات ثبت سفارشات اطلاعات خود را تکمیل
             نمایید.

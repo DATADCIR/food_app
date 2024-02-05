@@ -26,9 +26,9 @@ const userDashboardLayout = ({ children }) => {
           <Icons name="Menu" classes={"text-white text-2xl mt-2"} />
         </div>{" "}
         <div
-          className={`absolute z-10 ${
+          className={`absolute z-40 ${
             openMobileSizeSidebar ? "w-full md:w-3/4" : "hidden"
-          } h-full flex lg:hidden flex-col py-10 pr-5 gap-3 bg-yellow-light rounded-r-lg`}
+          }  min-h-fit h-full flex lg:hidden flex-col py-10 pr-5 gap-3 bg-yellow-light rounded-r-lg`}
         >
           <div className="flex justify-end ml-10 mb-10">
             <div
@@ -64,7 +64,7 @@ const userDashboardLayout = ({ children }) => {
             سفارشات
           </PanelLink>
         </div>
-        <div className="w-full lg:w-3/4 bg-gray-light rounded-l-lg">
+        <div className="w-full lg:w-3/4 bg-gray-light rounded-l-lg overflow-hidden">
           {children}
         </div>
       </div>
