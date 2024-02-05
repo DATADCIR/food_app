@@ -1,14 +1,14 @@
 const UserDashboardPage = () => {
   return (
-    <div className="p-10 flex flex-col gap-8">
-      <div className="flex flex-col md:flex-row">
-        <div className="w-1/3">
-          <div className=" w-64 h-64 rounded-xl bg-gray-100"></div>
+    <div className="p-5 sm:p-10 flex flex-col gap-8">
+      <div className="flex flex-col lg:flex-row gap-10">
+        <div className="sm:w-1/3 flex justify-center sm:justify-start">
+          <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-xl bg-gray-100"></div>
         </div>
-        <div className="w-2/3 flex flex-col md:flex-row justify-between py-5">
+        <div className="w-2/3 flex flex-col md:flex-row justify-between py-5 gap-10">
           <div className="md:w-1/2 flex flex-col gap-10">
             <p>
-              <sapn>نام :</sapn>
+              <sapn>نام : </sapn>
               <span>علی</span>
             </p>
             <p>
@@ -24,7 +24,7 @@ const UserDashboardPage = () => {
               <span>اصفهان</span>
             </p>
           </div>
-          <div className="md:w-1/2 flex flex-col gap-5">
+          <div className="md:w-1/2 flex flex-col gap-10">
             <p>
               <sapn>تلفن :</sapn>
               <span>0911456258</span>
@@ -37,13 +37,13 @@ const UserDashboardPage = () => {
         </div>
       </div>{" "}
       <div className="flex flex-col md:flex-row gap-10">
-        <div className="w-2/3 h-16 rounded-xl text-white flex justify-center items-center bg-green-light">
-          <p>
+        <div className="md:w-2/3 h-16 rounded-xl text-white flex justify-center items-center bg-green-light px-2 py-1 sm:py-0 ">
+          <p className="text-center">
             جهت ارائه خدمات و تسریع در عملیات ثبت سفارشات اطلاعات خود را تکمیل
             نمایید.
           </p>
         </div>
-        <button className="w-1/3 h-16 rounded-xl text-white flex justify-center items-center bg-green-light">
+        <button className="md:w-1/3 h-16 rounded-xl text-white flex justify-center items-center bg-green-light">
           تکمیل اطلاعات
         </button>
       </div>

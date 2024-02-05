@@ -1,8 +1,8 @@
 import Input from "@/components/shared/forms/input";
 const DashboardUsersPage = () => {
   return (
-    <div className="p-10 flex flex-col gap-5">
-      <div className="w-full flex flex-col md:flex-row gap-10">
+    <div className="p-10 flex flex-col gap-3 sm:gap-5">
+      <div className="w-full flex flex-col md:flex-row gap-5 sm:gap-10">
         <Input
           label={"نام"}
           type={"text"}

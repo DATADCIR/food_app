@@ -47,7 +47,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-2">
           {isUserLogin ? (
-            <button className="text-white bg-yellow-light text-xs sm:text-base rounded-full flex items-center justify-center w-16 h-8 sm:w-20 sm:h-9">
+            <button className="text-white bg-yellow-light text-xs sm:text-base rounded-full flex items-center justify-center w-16 h-8 sm:w-28 sm:h-9">
               <Link href={"/user-dashboard/informations"}>پنل کاربری</Link>
             </button>
           ) : (
