@@ -7,6 +7,7 @@ import { categoyFilter, foodItems } from "@/data";
 import FoodItem from "./_components/Foodtem";
 import Pagination from "@/components/shared/forms/Pagination";
 import Survey from "../_components/survey";
+import Input from "@/components/ui/forms/input";
 const StorePage = () => {
   return (
     <>
@@ -49,13 +50,19 @@ const StorePage = () => {
           </div>
           <div className="flex flex-col p-5 gap-5 bg-gray-light rounded-lg">
             <p className="text-yellow-light text-2xl">قیمت</p>
-            <input
+            <Input
+              type={"text"}
               placeholder="از قیمت..."
-              className="px-2 py-3 rounded-full bg-white border-yellow-light border-2 focus:border-yellow-light outline-0 text-black"
+              classes={
+                "px-2 py-3 rounded-full bg-white border-yellow-light border-2 focus:border-yellow-light outline-0 text-black"
+              }
             />
-            <input
+            <Input
+              type={"text"}
               placeholder="تا قیمت..."
-              className="px-2 py-3 rounded-full bg-white border-yellow-light border-2 focus:border-yellow-light outline-0 text-black"
+              classes={
+                "px-2 py-3 rounded-full bg-white border-yellow-light border-2 focus:border-yellow-light outline-0 text-black"
+              }
             />
           </div>
         </div>
