@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Input from "@/components/ui/forms/input";
 const Varification = () => {
   return (
     <div className="w-full h-screen flex flex-col md:flex-row">

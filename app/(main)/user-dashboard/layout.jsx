@@ -3,7 +3,7 @@ import { useState } from "react";
 import PageInspector from "../_components/PageInspector";
 import PanelLink from "./_components/panelLink";
 import Icons from "@/components/shared/icons";
-const userDashboardLayout = ({ children }) => {
+const UserDashboardLayout = ({ children }) => {
   const [openMobileSizeSidebar, setOpenMobileSizeSidebar] = useState(false);
   return (
     <>
@@ -71,4 +71,4 @@ const userDashboardLayout = ({ children }) => {
     </>
   );
 };
-export default userDashboardLayout;
+export default UserDashboardLayout;
