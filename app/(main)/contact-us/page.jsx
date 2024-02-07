@@ -2,6 +2,10 @@ import Image from "next/image";
 import PageInspector from "../_components/PageInspector";
 import Survey from "../_components/survey";
 import Input from "@/components/ui/forms/input";
+export const metadata = {
+  title: "تماس با ما",
+  description: "این صفحه به روش های ارتباط با مجوعه ساندی اشاره دارد.",
+};
 const ContactUsPage = () => {
   return (
     <>

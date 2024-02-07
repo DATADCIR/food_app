@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "داشبورد | کاربران",
+  description: "داشبورد کاربران عادی سایت",
+};
 const UserDashboardPage = () => {
   return (
     <div className="p-5 sm:p-10 flex flex-col gap-8">

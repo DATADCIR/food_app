@@ -4,6 +4,10 @@ import PageInspector from "../_components/PageInspector";
 import Gallery from "./_components/gallery";
 import Image from "next/image";
 import Comment from "./_components/comment";
+export const metadata = {
+  title: "محصول خاص",
+  description: "این صفحه به یک محصول خاص اشاره دارد .",
+};
 const SingleProductPage = () => {
   return (
     <>
