@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Rating from "../../_components/Rating";
 import Icons from "@/components/shared/icons";

@@ -1,4 +1,8 @@
 import Input from "@/components/shared/forms/input";
+export const metadata = {
+  title: "اطلاعات کاربران",
+  description: "اطلاعات کاربران سایت ساندی",
+};
 const DashboardUsersPage = () => {
   return (
     <div className="p-10 flex flex-col gap-3 sm:gap-5">
