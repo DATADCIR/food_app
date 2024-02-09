@@ -9,12 +9,12 @@ export const categories = [
   { key: "سالاد", image: "/images/Rectangle 23 (2).png" },
 ];
 export const categoyFilter = [
-  { label: "پروتئینی" },
-  { label: "کلد درینک" },
-  { label: "وارم درینک" },
-  { label: "فستفود" },
-  { label: "سنتی" },
-  { label: "سالاد" },
+  { id: 1, label: "پروتئینی" },
+  { id: 2, label: "کلد درینک" },
+  { id: 3, label: "وارم درینک" },
+  { id: 4, label: "فستفود" },
+  { id: 5, label: "سنتی" },
+  { id: 6, label: "سالاد" },
 ];
 
 export const foodItems = [

@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import PageInspector from "../_components/PageInspector";
 import ListGruop from "@/components/shared/forms/ListGroup";
@@ -8,6 +7,10 @@ import FoodItem from "./_components/Foodtem";
 import Pagination from "@/components/shared/forms/Pagination";
 import Survey from "../_components/survey";
 import Input from "@/components/ui/forms/input";
+export const metadata = {
+  title: "فروشگاه",
+  description: "معرفی منو غذا های قابل ارائه توسط مجموعه ساندی",
+};
 const StorePage = () => {
   return (
     <>

@@ -1,3 +1,4 @@
+"use client";
 const Checkbox = ({ item, classes }) => {
   const { label } = item;
   return (

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 const Input = ({ type, placeholder, value, onChange, classes }) => {
