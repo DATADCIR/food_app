@@ -1,6 +1,10 @@
 import Divider from "@/components/shared/dividers/divider";
 import Image from "next/image";
 import PageInspector from "../_components/PageInspector";
+export const metadata = {
+  title: "درباره ما",
+  description: "معرفی افرادی در مجموعه سادی کار میکنند",
+};
 const AboutUsPage = () => {
   return (
     <>

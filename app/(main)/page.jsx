@@ -7,6 +7,7 @@ import Rating from "./_components/Rating";
 import Icons from "@/components/shared/icons";
 import Survey from "./_components/survey";
 import CategoryItem from "./_components/CategoryItem";
+import Input from "@/components/ui/forms/input";
 export default function Home() {
   return (
     <main className="flex flex-col py-2">
@@ -18,9 +19,12 @@ export default function Home() {
               تجربه بهترین لحظات در کنار دوستان و خانواده در کنار ما ، امیدواریم
               لذت ببرید!؟
             </p>
-            <input
-              className="outline-0  h-8 text-white text-xs px-4 bg-gray-light rounded-full border border-yellow-light"
+            <Input
+              type={"text"}
               placeholder="چی دوست داری؟"
+              classes={
+                "outline-0  h-8 text-white text-xs px-4 bg-gray-light rounded-full border border-yellow-light"
+              }
             />
           </div>
           <div className="relative flex justify-center items-end md:w-2/3">

@@ -4,6 +4,10 @@ import PageInspector from "../_components/PageInspector";
 import Gallery from "./_components/gallery";
 import Image from "next/image";
 import Comment from "./_components/comment";
+export const metadata = {
+  title: "محصول خاص",
+  description: "این صفحه به یک محصول خاص اشاره دارد .",
+};
 const SingleProductPage = () => {
   return (
     <>
@@ -156,8 +160,8 @@ const SingleProductPage = () => {
             className="w-full h-60 rounded-lg px-4 py-5 bg-body border-yellow-light border-2 focus:border-yellow-light outline-0 text-white"
           ></textarea>
         </div>
-        <div className="flex flex-col-reverse md:flex-row w-full gap-5">
-          <div className="md:w-4/5 flex flex-col  gap-20 bg-body py-14 px-5 sm:pl-5">
+        <div className="flex flex-col-reverse xl:flex-row w-full gap-5 p-5">
+          <div className="md:w-4/5 flex flex-col  gap-20 bg-body py-14 px-10 sm:pl-5">
             <Comment />
             <Comment />
             <Comment />

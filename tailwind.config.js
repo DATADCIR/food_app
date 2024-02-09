@@ -25,6 +25,8 @@ module.exports = {
         body: "#484848",
         gray: {
           light: "#5C5C5C",
+          100: "#D9D9D9",
+          50: "#F0F0F0",
         },
         green: {
           light: "#0FA958",
@@ -35,6 +37,7 @@ module.exports = {
       },
       scale: {
         175: "1.75",
+        185: "1.85",
         200: "2",
         300: "3",
         400: "4",
