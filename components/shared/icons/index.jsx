@@ -10,6 +10,7 @@ import SunIcon from "@/components/ui/icons/Sun";
 import CloseIcon from "@/components/ui/icons/Close";
 import ChevronLeftIcon from "@/components/ui/icons/ChevronLeft";
 import ChevronRightIcon from "@/components/ui/icons/ChevronRight";
+import BellIcon from "@/components/ui/icons/Bell";
 
 const Icons = ({ name, classes, handleClick }) => {
   let DynamicComponent;
@@ -50,6 +51,9 @@ const Icons = ({ name, classes, handleClick }) => {
       break;
     case "ChevronRight":
       DynamicComponent = ChevronRightIcon;
+      break;
+    case "Bell":
+      DynamicComponent = BellIcon;
       break;
     default:
       // Handle unknown icon name, set a default icon, or throw an error based on your needs.
