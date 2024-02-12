@@ -11,7 +11,7 @@ const NavLink = ({ href, children }) => {
       className={` ${
         isActive
           ? "text-yellow-light underline underline-offset-8"
-          : "text-white"
+          : "text-black dark:text-white"
       }`}
     >
       {children}
