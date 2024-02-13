@@ -1,7 +1,7 @@
 import Image from "next/image";
 const Survey = () => {
   return (
-    <div className="bg-gray-light mt-40 flex py-3 relative w-[115%] translate-x-8">
+    <div className="dark:bg-gray-light bg-[#E3E3E4] mt-40 flex py-3 relative w-[115%] translate-x-8">
       <div className="flex flex-col  p-8 w-full md:w-1/3 gap-5">
         <h1 className="text-yellow-light text-2xl">نظر سنجی</h1>
         <p className="text-lg text-justify">

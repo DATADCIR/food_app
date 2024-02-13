@@ -17,12 +17,12 @@ const SingleProductPage = () => {
           "text-yellow-light text-base sm:text-lg h-24 rounded-xl border-2 border-yellow-light my-10 "
         }
       />
-      <div className="flex flex-col lg:flex-row bg-gray-light p-6 rounded-lg gap-4">
+      <div className="flex flex-col lg:flex-row dark:bg-gray-light bg-[#E3E3E4] p-6 rounded-lg gap-4">
         <div className="lg:w-1/3 flex flex-col gap-5">
           <h1 className="text-yellow-light text-lg sm:text-2xl">
             ماهي آب پز شده
           </h1>
-          <p className="text-justify text-white  text-base sm:text-xl">
+          <p className="text-justify text-[#232323] dark:text-white  text-base sm:text-xl">
             اين غذا نوعي غذاي رژيمي تلقي ميشود. با كمترين مقدار ممكن روغن در اب
             90 درجه جوشانده ميشود و سپس در ظروف گريل به ارامي تفت داده ميشود. در
             كنار اين غذا سالاد فصل قرار گرفته ميشود كه شامل گوجه فرنگي اسلايس
@@ -45,7 +45,7 @@ const SingleProductPage = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-5 p-10 bg-gray-light rounded-lg my-10">
+      <div className="flex flex-col md:flex-row gap-5 p-10 dark:bg-gray-light bg-[#E3E3E4] rounded-lg my-10">
         <div className="relative md:w-2/3 flex flex-col gap-10 px-5 py-8">
           <Image
             src="/images/Rectangle 95.png"
@@ -59,7 +59,7 @@ const SingleProductPage = () => {
             classes={"text-yellow-light text-lg md:text-2xl z-10"}
           />
           <div className="w-11/12 flex justify-between gap-5 z-10">
-            <div className="flex flex-col text-center gap-4">
+            <div className="flex flex-col text-center gap-4 text-[#232323] dark:text-white">
               <span>ماهی بدون استخوان</span>
               <span>آب</span>
               <span>نمک</span>
@@ -70,7 +70,7 @@ const SingleProductPage = () => {
               <span>کلم قرمز</span>
               <span>روغن</span>
             </div>
-            <div className="flex flex-col text-center gap-4">
+            <div className="flex flex-col text-center gap-4 text-[#232323] dark:text-white">
               <span>یک عدد</span>
               <span>یک لیتر</span>
               <span>10 گرم</span>
@@ -152,16 +152,20 @@ const SingleProductPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col bg-gray-light rounded-lg">
+      <div className="flex flex-col dark:bg-gray-light bg-[#E3E3E4] rounded-lg">
         <div className="p-5">
           <textarea
             placeholder="نظر شما..."
             type={"textarea"}
-            className="w-full h-60 rounded-lg px-4 py-5 bg-body border-yellow-light border-2 focus:border-yellow-light outline-0 text-white"
+            className="w-full h-60 rounded-lg px-4 py-5 dark:bg-gray-light bg-[#E3E3E4] border-yellow-light border-2 focus:border-yellow-light outline-0 text-white"
           ></textarea>
         </div>
-        <div className="flex flex-col-reverse xl:flex-row w-full gap-5 p-5">
-          <div className="md:w-4/5 flex flex-col  gap-20 bg-body py-14 px-10 sm:pl-5">
+
+        <div className="flex flex-col-reverse xl:flex-row w-full gap-5">
+          <div className="md:w-4/5 flex flex-col  gap-20 dark:bg-gray-light bg-[#fff] py-14 px-5 sm:pl-5">
+
+       
+
             <Comment />
             <Comment />
             <Comment />

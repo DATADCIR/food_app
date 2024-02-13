@@ -9,10 +9,10 @@ const AboutUsPage = () => {
   return (
     <>
       {" "}
-      <div className="w-full flex flex-col md:flex-row bg-gray-light pt-12 gap-y-10">
+      <div className="w-full flex flex-col md:flex-row dark:bg-gray-light bg-[#E3E3E4] pt-12 gap-y-10">
         <div className="flex flex-col justify-center  md:w-1/3 px-6 gap-5">
           <h1 className="text-2xl text-yellow-light">رستوران سان دي</h1>
-          <p className="text-white text-xl flex flex-col gap-3">
+          <p className="text-[#232323] dark:text-white text-xl flex flex-col gap-3">
             <span>اينجا ميتوني بيشتر با ما ي</span>
             <span>اشنا بشي خلاصه اي از چگونگي </span>
             <span>شكل گيري رستورانمو ببينی</span>
@@ -39,7 +39,8 @@ const AboutUsPage = () => {
         classes="text-yellow-light text-lg h-24 border-2 border-yellow-light my-10 rounded-xl"
       />
       <Divider tag={"گالری تصاویر"} classes="mb-10 text-yellow-light" />
-      <div className="flex flex-col lg:flex-row justify-center items-center p-10 gap-5 bg-gray-light rounded-lg">
+      <div className="flex flex-col lg:flex-row justify-center items-center p-10 gap-5 dark:bg-gray-light bg-[#E3E3E4]
+ rounded-lg">
         <div className="w-full lg:w-3/5 flex flex-col  gap-5">
           <div className="flex  gap-3">
             <Image
@@ -84,9 +85,9 @@ const AboutUsPage = () => {
           />
         </div>
       </div>
-      <div className="relative flex flex-col md:flex-row bg-gray-light px-10 pt-8 pb-52 sm:pb-48 my-10 gap-y-10 rounded-lg">
+      <div className="relative flex flex-col md:flex-row dark:bg-gray-light bg-[#E3E3E4] px-10 pt-8 pb-52 sm:pb-48 my-10 gap-y-10 rounded-lg">
         <div className="flex items-center md:w-3/5">
-          <p className=" text-white text-xl text-justify md:w-4/5">
+          <p className=" text-[#232323] dark:text-white text-xl text-justify md:w-4/5">
             تیم آشپزی سان دی متشکل از چهار سر اشپز حرفه ای میباشد. ما معتقد هسیم
             که غذاهایمان از مابقی رستوران ها متفاوت باشد و برای این کار تلاش
             زیادی میکنیم

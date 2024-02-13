@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="relative footer mt-24 flex flex-col lg:flex-row  gap-5 mb-16 px-8">
         <div className="flex flex-col w-full lg:w-1/2 gap-7">
           <div className="flex flex-col md:flex-row gap-5">
-            <div className="w-full md:w-1/2 h-80 flex justify-center items-center bg-gray-light rounded-t-lg z-10 opacity-80">
+            <div className="w-full md:w-1/2 h-80 flex justify-center items-center dark:bg-gray-light bg-[#fff] rounded-t-lg z-10 opacity-80">
               <div className="relative flex flex-col gap-3 ">
                 <p className="text-yellow-light text-xl">شعبه ها</p>
                 <p className="text-lg">شعبه 1:اصفهان-سهروردي</p>
@@ -15,7 +15,7 @@ const Footer = () => {
                 <p className="text-lg">شعبه 3:مشهد-فردوسي</p>
               </div>
             </div>
-            <div className="w-full md:w-1/2 h-80 flex justify-center items-center bg-gray-light  rounded-t-lg z-10 opacity-80">
+            <div className="w-full md:w-1/2 h-80 flex justify-center items-center dark:bg-gray-light bg-[#fff]  rounded-t-lg z-10 opacity-80">
               <div className="flex flex-col gap-3">
                 <p className="text-yellow-light text-xl">ارتباط</p>
                 <p className="text-lg">تلفن:03131234567</p>
@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="w-full h-20 bg-gray-light flex items-center justify-center   rounded-t-lg px-2 z-10 opacity-80">
+          <div className="w-full h-20 dark:bg-gray-light bg-[#fff] flex items-center justify-center   rounded-t-lg px-2 z-10 opacity-80">
             <p className="text-yellow-light text-center text-xl sm:text-2xl">
               تمامي منابع محفوظ به سان دي ميباشد
             </p>
