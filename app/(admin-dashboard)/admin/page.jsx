@@ -35,11 +35,11 @@ const AdminDashboardPage = () => {
         <div className="w-full flex flex-col gap-8 rounded-2xl bg-gray-light px-3 py-4">
           <Title tag={"سود شعبات"} classes={"text-yellow-light gap-1"} />
           {[...Array(3)].map((_, index) => (
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-1 sm:gap-5">
-              <div
-                key={index}
-                className="w-full h-12 flex flex-col gap-2 sm:gap-4"
-              >
+            <div
+              key={index}
+              className="flex flex-col sm:flex-row justify-center items-center gap-1 sm:gap-5"
+            >
+              <div className="w-full h-12 flex flex-col gap-2 sm:gap-4">
                 <div className="w-full flex justify-between items-center bg-AdminBlack-100 px-2 py-1 rounded-full">
                   <div className="flex gap-2 sm:gap-4 items-center">
                     <div className="w-6 h-6 sm:w-8 sm:h-8 flex justify-center items-center rounded-full border border-yellow-light text-yellow-light bg-gray-light">
