@@ -3,10 +3,13 @@ import Title from "../_components/title";
 const AdminDashboardPage = () => {
   return (
     <div className="w-full h-full bg-blacl-dark flex flex-col lg:flex-row gap-5 p-5">
-      <div className="w-2/5 flex flex-col gap-5 bg-gray-light  rounded-2xl py-3 px-2">
+      <div className="lg:w-2/5 flex flex-col gap-5 bg-gray-light  rounded-2xl py-3 px-2">
         <Title tag={"پرفروش ترین ها"} classes={"text-yellow-light gap-1"} />
         {[...Array(9)].map((_, index) => (
-          <div key={index} className="w-full flex flex-col gap-4">
+          <div
+            key={index}
+            className="w-full flex flex-col gap-4 bg-AdminBlack-100 rounded-full"
+          >
             <div className="w-full flex justify-between items-center bg-black-100 px-2 py-1 rounded-full">
               <div className="flex gap-4 items-center">
                 <div className="w-8 h-8 flex justify-center items-center rounded-full border border-yellow-light text-yellow-light bg-gray-light">
@@ -21,7 +24,7 @@ const AdminDashboardPage = () => {
           </div>
         ))}
       </div>
-      <div className="w-3/5 flex flex-col gap-10">
+      <div className="lg:w-3/5 flex flex-col gap-10">
         <div className="w-full flex glex-col gap-5 rounded-2xl bg-gray-light px-3 py-4">
           <Title tag={"نمودار رشد قیمت"} classes={"text-yellow-light gap-1"} />
         </div>

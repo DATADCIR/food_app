@@ -6,7 +6,9 @@ const AdminDashboardLayout = ({ children }) => {
       <Navbar />
       <div className="flex">
         <Sidebar />
-        <div className="w-full bg-AdminBlack-100 p-5">{children}</div>
+        <div className="w-full bg-AdminBlack-100 p-5 overflow-y-hidden">
+          {children}
+        </div>
       </div>
     </div>
   );
