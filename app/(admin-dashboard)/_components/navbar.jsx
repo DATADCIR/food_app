@@ -4,7 +4,7 @@ import Link from "next/link";
 const AdminNavbar = () => {
   return (
     <div className="w-full h-36 flex bg-AdminBlack-100">
-      <div className="w-2/5 md:w-1/4 flex  justify-between items-center px-5">
+      <div className="w-4/5 md:w-1/4 flex  justify-between items-center px-5">
         <Link href={"/"}>
           <p className="text-white text-xl">ساندی</p>
         </Link>

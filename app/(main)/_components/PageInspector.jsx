@@ -10,7 +10,7 @@ const PageInspector = ({ title, classes }) => {
         src="/images/Rectangle 33.png"
         width={900}
         height={90}
-        className="w-full h-full absolute top-0 left-0 z-0 dark:brightness-5 saturate-50"
+        className="w-full h-full absolute top-0 left-0 z-0 dark:brightness-5 brightness-25"
       />
     </div>
   );

@@ -5,7 +5,7 @@ import Link from "./SidebarLink";
 const SidebarAdmin = () => {
   const [isSideBarOpen, setIsSidebarOpen] = useState(false);
   return (
-    <div className="relative">
+    <div className="relative bg-AdminBlack-100">
       <div className="w-96 min-h-screen h-full hidden lg:flex flex-col gap-5 bg-yellow-light px-5 overflow-hidden py-10">
         <Link
           href="/admin"
@@ -29,7 +29,7 @@ const SidebarAdmin = () => {
       <div className="w-12 sm:w-16 min-h-screen h-full lg:hidden flex items-center flex-col gap-5 bg-yellow-light px-5 overflow-hidden py-5 rounded-l-xl">
         <Icons
           name="Menu"
-          classes={"text-3xl"}
+          classes={"text-3xl text-white"}
           handleClick={() => setIsSidebarOpen(true)}
         />
       </div>
