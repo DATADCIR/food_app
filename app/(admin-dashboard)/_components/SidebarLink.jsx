@@ -8,7 +8,9 @@ const SidebarAdminLink = ({ href, classes, handleClick, children }) => {
       href={href}
       onClick={handleClick}
       className={`${classes} ${
-        pathName.includes(href) ? "-translate-x-10 text-yellow-light" : ""
+        pathName.includes(href)
+          ? "-translate-x-10 text-yellow-light"
+          : "text-white"
       }`}
     >
       {children}
