@@ -7,11 +7,11 @@ const InputComponent = ({
   value,
   onChange,
   classes,
-  inputClasses,
 }) => {
   return (
     <div className={`w-full flex flex-col gap-3`}>
-      <p className="text-yellow-light mr-3">{label}</p>
+      {label ? <p className="text-yellow-light mr-3">{label}</p> : null}
+
       <Input
         type={type}
         placeholder={placeholder}

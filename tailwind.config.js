@@ -31,6 +31,9 @@ module.exports = {
         green: {
           light: "#0FA958",
         },
+        AdminBlack: {
+          100: "#232323",
+        },
       },
       outlineWidth: {
         20: "20px",
