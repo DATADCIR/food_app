@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Icons from "@/components/shared/icons";
 import Link from "./SidebarLink";
+import { AnimatePresence, motion } from "framer-motion";
 const SidebarAdmin = () => {
   const [isSideBarOpen, setIsSidebarOpen] = useState(false);
   return (
@@ -33,36 +34,44 @@ const SidebarAdmin = () => {
           handleClick={() => setIsSidebarOpen(true)}
         />
       </div>
-      {isSideBarOpen ? (
-        <div className="absolute w-[500%] sm:w-[800%] h-full flex lg:hidden flex-col gap-5 px-3 py-4 bg-yellow-light top-0 right-0 z-50 overflow-hidden rounded-l-lg">
-          <Icons
-            name="Close"
-            handleClick={() => setIsSidebarOpen(false)}
-            classes="mr-auto ml-5 text-4xl"
-          />
-          <Link
-            href="/admin"
-            classes="w-full h-20 flex justify-center items-center rounded-lg bg-gray-light text-2xl"
-            handleClick={() => setIsSidebarOpen(false)}
+      <AnimatePresence>
+        {isSideBarOpen && (
+          <motion.div
+            initial={{ x: "100vw" }}
+            animate={{ x: "0vw", type: "easeInOut" }}
+            exit={{ x: "100vw" }}
+            transition={{ ease: "linear" }}
+            className="absolute w-[500%] sm:w-[800%] h-full flex lg:hidden flex-col gap-5 px-3 py-4 bg-yellow-light top-0 right-0 z-50 overflow-hidden rounded-l-lg"
           >
-            داشبورد
-          </Link>
-          <Link
-            href="/products"
-            classes="w-full h-20 flex justify-center items-center rounded-lg bg-gray-light text-2xl"
-            handleClick={() => setIsSidebarOpen(false)}
-          >
-            محصولات
-          </Link>
-          <Link
-            href="/users"
-            classes="w-full h-20 flex justify-center items-center rounded-lg bg-gray-light text-2xl"
-            handleClick={() => setIsSidebarOpen(false)}
-          >
-            کاربران
-          </Link>
-        </div>
-      ) : null}
+            <Icons
+              name="Close"
+              handleClick={() => setIsSidebarOpen(false)}
+              classes="mr-auto ml-5 text-4xl"
+            />
+            <Link
+              href="/admin"
+              classes="w-full h-20 flex justify-center items-center rounded-lg bg-gray-light text-2xl"
+              handleClick={() => setIsSidebarOpen(false)}
+            >
+              داشبورد
+            </Link>
+            <Link
+              href="/products"
+              classes="w-full h-20 flex justify-center items-center rounded-lg bg-gray-light text-2xl"
+              handleClick={() => setIsSidebarOpen(false)}
+            >
+              محصولات
+            </Link>
+            <Link
+              href="/users"
+              classes="w-full h-20 flex justify-center items-center rounded-lg bg-gray-light text-2xl"
+              handleClick={() => setIsSidebarOpen(false)}
+            >
+              کاربران
+            </Link>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
